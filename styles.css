@@ -26,6 +26,10 @@ img {
     height: auto;
 }
 
+.logo {
+    width: 400px;
+}
+
 h1 {
     text-align: center;
     color: #4A5A6B; /* Matches the "EONIC" text color in the logo */
