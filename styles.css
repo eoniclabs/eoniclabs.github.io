@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #4A5A6B; /* Matches the "EONIC" text color in the logo */
+}
+
+h2 {
+    color: #00AEEF; /* Matches the "LABS" and graphical element color in the logo */
+}
+
+p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+a {
+    color: #00AEEF; /* Matches the blue in the logo for consistency */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: adds a hover effect for usability */
+}
