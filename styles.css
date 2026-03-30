@@ -1,59 +1,240 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: white;
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-.container {
-    flex: 1;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 24px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.content {
-    max-width: 800px;
+.nav-logo img {
+    height: 36px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4A5A6B;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #00AEEF;
+}
+
+/* Hero */
+.hero {
+    padding: 160px 24px 100px;
+    text-align: center;
+    background: linear-gradient(135deg, #f7fbff 0%, #eef6fc 100%);
+}
+
+.hero-content {
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.hero h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #4A5A6B;
+    margin-bottom: 20px;
+    line-height: 1.25;
 }
 
-.logo {
-    width: 400px;
+.hero p {
+    font-size: 1.15rem;
+    color: #5a6a7a;
+    line-height: 1.7;
 }
 
-h1 {
-    text-align: center;
-    color: #4A5A6B; /* Matches the "EONIC" text color in the logo */
+/* Sections */
+.section {
+    padding: 80px 24px;
 }
 
-h2 {
-    color: #00AEEF; /* Matches the "LABS" and graphical element color in the logo */
+.section-alt {
+    background-color: #f9fbfd;
 }
 
-p {
-    margin: 10px 0;
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+.section-content h2 {
+    font-size: 1.6rem;
+    color: #4A5A6B;
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+/* Ventures Grid */
+.ventures-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.venture-card {
+    background: #fff;
+    border: 1px solid #e8ecf0;
+    border-radius: 10px;
+    padding: 32px;
+    transition: box-shadow 0.2s;
+}
+
+.venture-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.venture-card h3 {
+    font-size: 1.3rem;
+    color: #00AEEF;
+    margin-bottom: 12px;
+}
+
+.venture-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.venture-card a {
+    color: #00AEEF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.venture-card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact-email a {
+    font-size: 1.2rem;
+    color: #00AEEF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
+    border-top: 1px solid #eee;
+    padding: 24px;
     text-align: center;
-    padding: 10px;
-    font-size: 12px;
 }
 
-a {
-    color: #00AEEF; /* Matches the blue in the logo for consistency */
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #999;
+}
+
+.footer-content a {
+    color: #999;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline; /* Optional: adds a hover effect for usability */
+.footer-content a:hover {
+    color: #00AEEF;
+}
+
+/* Privacy page */
+.privacy-content h1 {
+    font-size: 2rem;
+    color: #4A5A6B;
+    margin-bottom: 8px;
+}
+
+.privacy-content h2 {
+    margin-top: 32px;
+}
+
+.privacy-content ul {
+    margin: 12px 0 16px 24px;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.privacy-content li {
+    margin-bottom: 8px;
+}
+
+.privacy-date {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 130px 20px 70px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .ventures-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
