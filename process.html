@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How Eonic Labs works — our process, principles and engineering methodology.">
+    <meta name="theme-color" content="#0a1628">
+    <title>Process — Eonic Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="nav-container">
+        <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Eonic Labs"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="process.html" class="active">Process</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get in touch <span class="arrow">→</span></a>
+    </nav>
+</header>
+
+<section class="page-header">
+    <div class="page-header-content">
+            <img class="page-header-logo" src="images/logo.png" alt="" aria-hidden="true">
+        <div class="breadcrumb"><a href="index.html">Eonic Labs</a> <span>/ Process</span></div>
+        <span class="eyebrow">How we work</span>
+        <h1>Small team, tight loops, <span class="accent">real software.</span></h1>
+        <p>We run as a focused product team — no hand-offs between strategy, design and engineering, no waiting rooms between decision and deployment. Here's how a product gets from idea to production inside Eonic Labs.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-content">
+        <div class="section-header">
+            <div class="section-header-left">
+                <span class="eyebrow">The arc</span>
+                <h2 class="section-title">From idea to <span class="accent">in production.</span></h2>
+            </div>
+            <div class="section-header-right">
+                <p class="section-lead">A typical venture moves through four phases. Phases can overlap, and small experiments cycle through in days rather than weeks.</p>
+            </div>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <span class="process-num">Phase 01</span>
+                <h3>Discover</h3>
+                <p>Deep-dive research on the domain, the jobs-to-be-done, and the data available. We sketch the system before touching code — architecture, data model, and what "good" looks like at scale.</p>
+            </div>
+            <div class="process-step">
+                <span class="process-num">Phase 02</span>
+                <h3>Prototype</h3>
+                <p>Working end-to-end in two weeks. We ship a thin vertical slice with real data and real users — enough to validate the hard technical and product bets before going wider.</p>
+            </div>
+            <div class="process-step">
+                <span class="process-num">Phase 03</span>
+                <h3>Build</h3>
+                <p>Production engineering, infrastructure, integrations, observability, CI/CD. Ship small, ship often, keep trunk green, flag everything. Evals and SLOs defined up front, not retrofitted.</p>
+            </div>
+            <div class="process-step">
+                <span class="process-num">Phase 04</span>
+                <h3>Operate</h3>
+                <p>Once live, the people who built it also run it. On-call rotations, incident reviews, continuous improvement. No hand-off to a separate ops team — the feedback loop stays tight.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="section-content">
+        <div class="section-header">
+            <div class="section-header-left">
+                <span class="eyebrow">Principles</span>
+                <h2 class="section-title">How we make <span class="accent">engineering decisions.</span></h2>
+            </div>
+            <div class="section-header-right">
+                <p class="section-lead">Technology choices are opinions with consequences. Here are the opinions we hold most strongly, and why.</p>
+            </div>
+        </div>
+        <div class="values-grid">
+            <div class="value">
+                <span class="value-num">01 — Boring tech</span>
+                <h3>Boring where it counts</h3>
+                <p>We pick proven, well-understood technology for the load-bearing parts of the stack. Postgres, Kafka, React, Go. The surprises happen at the product edge — not the infrastructure.</p>
+            </div>
+            <div class="value">
+                <span class="value-num">02 — Evals first</span>
+                <h3>Evals before models</h3>
+                <p>Every AI feature ships with an evaluation harness from day one. We measure what "good" means before we optimise for it. No vibes-driven model work.</p>
+            </div>
+            <div class="value">
+                <span class="value-num">03 — Instrumented</span>
+                <h3>Observable by default</h3>
+                <p>Tracing, logs, metrics and SLOs are part of the definition of done. If you can't see it in production, it doesn't exist — and we're not debugging by intuition.</p>
+            </div>
+            <div class="value">
+                <span class="value-num">04 — Privacy</span>
+                <h3>Privacy from the schema up</h3>
+                <p>GDPR isn't a legal checkbox bolted on at the end. We model data ownership, retention and deletion as first-class concerns, the same way we model tenancy or authorisation.</p>
+            </div>
+            <div class="value">
+                <span class="value-num">05 — Own the stack</span>
+                <h3>Own the full stack</h3>
+                <p>Engineers understand — and can change — everything from the database indexes to the CSS. No walls between disciplines makes the whole team faster and smarter.</p>
+            </div>
+            <div class="value">
+                <span class="value-num">06 — Quality bar</span>
+                <h3>One quality bar</h3>
+                <p>Internal tools, admin consoles, and back-office screens get the same craft as customer-facing surfaces. The people operating our products deserve good software too.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="section-content">
+        <div class="section-header">
+            <div class="section-header-left">
+                <span class="eyebrow">Engagement</span>
+                <h2 class="section-title" style="color:#fff;">What a typical <span class="accent">partnership looks like.</span></h2>
+            </div>
+            <div class="section-header-right">
+                <p class="section-lead" style="color:rgba(255,255,255,0.72);">We don't do short-term consulting. When we engage with a partner — whether that's an agency white-labelling our platform or a brand embedding our tech — the relationship is long-term by design.</p>
+            </div>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <span class="process-num">Week 01</span>
+                <h3>Discovery call</h3>
+                <p>A 30-minute conversation to understand what you're trying to do, who it's for, and whether we're the right partner.</p>
+            </div>
+            <div class="process-step">
+                <span class="process-num">Week 02–03</span>
+                <h3>Scoping &amp; proposal</h3>
+                <p>Technical scoping, a written proposal with milestones and costs, and a shared Notion space. Fixed-fee where possible.</p>
+            </div>
+            <div class="process-step">
+                <span class="process-num">Week 04+</span>
+                <h3>Build &amp; iterate</h3>
+                <p>Weekly demos, a shared backlog, direct Slack access to the engineers. No account managers in between.</p>
+            </div>
+            <div class="process-step">
+                <span class="process-num">Ongoing</span>
+                <h3>Run together</h3>
+                <p>We operate the platform, you operate the business. Monthly reviews, continuous improvement, no surprise invoices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="section-content">
+        <span class="eyebrow" style="color: var(--brand-bright);">Next</span>
+        <h2>Ready for a <span class="accent">discovery call?</span></h2>
+        <p>Tell us what you're working on. We'll reply within two business days with either a time to talk or a candid "not the right fit".</p>
+        <div class="hero-cta" style="margin-top: 0;">
+            <a href="contact.html" class="btn btn-primary">Start a conversation <span class="arrow">→</span></a>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand"><img src="images/logo.png" alt="Eonic Labs"><p>A Swedish technology studio building AI-driven platforms for digital advertising and influencer marketing.</p></div>
+        <div class="footer-col"><h4>Studio</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="process.html">Process</a></li><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Ventures</h4><ul><li><a href="https://spiderads.io" target="_blank" rel="noopener noreferrer">SpiderAds</a></li><li><a href="https://influeri.com" target="_blank" rel="noopener noreferrer">Influeri</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="mailto:privacy@eoniclabs.com">Data Requests</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Eonic Labs AB · Sweden</span>
+        <span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:hello@eoniclabs.com">hello@eoniclabs.com</a></span>
+    </div>
+</footer>
+
+<script src="app.js?v=4"></script>
+</body>
+</html>

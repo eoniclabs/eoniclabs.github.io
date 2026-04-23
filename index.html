@@ -4,63 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eonic Labs is a Swedish technology studio building AI-driven platforms for digital advertising and influencer marketing. Creators of SpiderAds and Influeri.">
+    <meta name="theme-color" content="#0a1628">
     <meta property="og:title" content="Eonic Labs — Technology studio for adtech and influencer marketing">
     <meta property="og:description" content="A Swedish technology studio building AI-driven platforms for digital advertising and influencer marketing.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://eoniclabs.com">
     <title>Eonic Labs — Technology studio for adtech and influencer marketing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
-<header>
+<header class="site-header">
     <nav class="nav-container">
-        <a href="/" class="nav-logo">
+        <a href="index.html" class="nav-logo" aria-label="Eonic Labs home">
             <img src="images/logo.png" alt="Eonic Labs">
         </a>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#what-we-do">What we do</a></li>
-            <li><a href="#ventures">Ventures</a></li>
-            <li><a href="#company">Company</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
+        <a href="contact.html" class="nav-cta">
+            Get in touch
+            <span class="arrow">→</span>
+        </a>
     </nav>
 </header>
 
-<section class="hero">
+<!-- ============================ HERO ============================ -->
+<section class="hero-dark" data-screen-label="Hero" data-logo-variant="watermark">
+    <canvas class="hero-bg" aria-hidden="true"></canvas>
+    <img class="hero-logo-watermark" src="images/logo.png" alt="" aria-hidden="true">
+    <img class="hero-logo-glyph" src="images/logo.png" alt="" aria-hidden="true" style="display:none;">
     <div class="hero-content">
-        <span class="eyebrow">Swedish technology studio</span>
-        <h1>Building the platforms that power modern digital advertising</h1>
-        <p>Eonic Labs designs, engineers and operates AI-driven products at the intersection of adtech, social media and influencer marketing — used by agencies, brands and creators across Europe.</p>
+        <span class="eyebrow">Swedish Technology Studio · Est. 2019</span>
+        <h1>Engineering the platforms that power <span class="accent">modern digital advertising</span>.</h1>
+        <p class="hero-sub">Eonic Labs designs, builds and operates AI-driven products at the intersection of adtech, social media and influencer marketing — used by agencies, brands and creators across Europe.</p>
         <div class="hero-cta">
-            <a href="#ventures" class="btn btn-primary">Explore our ventures</a>
-            <a href="#contact" class="btn btn-secondary">Get in touch</a>
+            <a href="work.html" class="btn btn-primary">Explore our work <span class="arrow">→</span></a>
+            <a href="contact.html" class="btn btn-secondary">Start a conversation</a>
+        </div>
+        <div class="hero-meta">
+            <span><span class="dot"></span>Operating 2 production platforms</span>
+            <span>1,000+ brands served</span>
+            <span>250M+ creator index</span>
         </div>
     </div>
 </section>
 
-<section id="about" class="section">
+<!-- ============================ BRAND BAND (alt 2) ============================ -->
+<section class="brand-band" data-screen-label="Brand band">
+    <div class="brand-band-inner">
+        <img src="images/logo.png" alt="Eonic Labs" class="brand-band-logo">
+        <p class="brand-band-tagline">Engineering the platforms of <span class="accent">modern advertising.</span></p>
+    </div>
+</section>
+
+<!-- ============================ ABOUT SNAPSHOT ============================ -->
+<section class="section" id="about">
     <div class="section-content">
         <div class="section-header">
             <div class="section-header-left">
                 <span class="eyebrow">About</span>
-                <h2>A product studio,<br>not an agency</h2>
+                <h2 class="section-title">A product studio,<br><span class="accent">not an agency.</span></h2>
             </div>
             <div class="section-header-right">
                 <p>Eonic Labs is an independent technology studio based in Sweden. We don't take on client services work — instead, we concentrate our effort on a small portfolio of products that we design, build and run ourselves. Everything we ship is owned and operated in-house, from the first line of code to the infrastructure it runs on.</p>
                 <p>Our focus is the digital advertising ecosystem: a complex, fast-moving space where creators, brands, agencies and platforms all meet. We build the software layer that makes those relationships work — automating the repetitive parts, surfacing the data that matters, and letting people spend their time on strategy and creativity.</p>
+                <p style="margin-top: 24px;"><a href="about.html" class="venture-link">Read more about us <span>→</span></a></p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="what-we-do" class="section section-alt">
+<!-- ============================ STATS ============================ -->
+<section class="section section-alt" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="section-content">
+        <div class="stats-band">
+            <div class="stat-cell">
+                <span class="stat-big">250<span class="unit">M+</span></span>
+                <span class="stat-desc">Creator profiles indexed</span>
+            </div>
+            <div class="stat-cell">
+                <span class="stat-big">1,000<span class="unit">+</span></span>
+                <span class="stat-desc">Brands on our platforms</span>
+            </div>
+            <div class="stat-cell">
+                <span class="stat-big">24<span class="unit">/7</span></span>
+                <span class="stat-desc">Automated ad operations</span>
+            </div>
+            <div class="stat-cell">
+                <span class="stat-big">7<span class="unit">yrs</span></span>
+                <span class="stat-desc">Building adtech products</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ WHAT WE DO ============================ -->
+<section class="section" id="what-we-do">
     <div class="section-content">
         <div class="section-header">
             <div class="section-header-left">
                 <span class="eyebrow">What we do</span>
-                <h2>Software for the attention economy</h2>
+                <h2 class="section-title">Software for the <span class="accent">attention economy.</span></h2>
             </div>
             <div class="section-header-right">
                 <p class="section-lead">We take ideas from concept to scalable product — combining technical leadership, modern cloud infrastructure and applied AI to build tools people rely on every day.</p>
@@ -68,57 +120,67 @@
         </div>
         <div class="features-grid">
             <div class="feature">
+                <span class="feature-num">01 / Adtech</span>
                 <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
                 </div>
                 <h3>Adtech platforms</h3>
                 <p>Programmatic and automated advertising systems that plan, publish and optimise campaigns across social and display at scale.</p>
             </div>
             <div class="feature">
+                <span class="feature-num">02 / Influencer</span>
                 <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="3"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="3"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
                 </div>
                 <h3>Influencer marketing</h3>
                 <p>Creator discovery, campaign orchestration and performance tracking — connecting brands with the right voices and measuring what actually works.</p>
             </div>
             <div class="feature">
+                <span class="feature-num">03 / AI</span>
                 <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                 </div>
                 <h3>Applied AI</h3>
-                <p>Practical, production-grade AI woven into everyday workflows — matchmaking, creative generation, optimisation and reporting.</p>
+                <p>Production-grade AI woven into everyday workflows — matchmaking, creative generation, optimisation and reporting.</p>
             </div>
             <div class="feature">
+                <span class="feature-num">04 / Cloud</span>
                 <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
                 </div>
                 <h3>Cloud infrastructure</h3>
                 <p>Scalable, reliable backends built for high-volume data processing, real-time reporting and global distribution.</p>
             </div>
             <div class="feature">
+                <span class="feature-num">05 / Data</span>
                 <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
                 </div>
                 <h3>Data & analytics</h3>
                 <p>Pipelines and dashboards that turn raw campaign signals into insight brands and agencies can act on immediately.</p>
             </div>
             <div class="feature">
+                <span class="feature-num">06 / Apps</span>
                 <div class="feature-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M7 15h3"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M7 15h3"/></svg>
                 </div>
                 <h3>Mobile &amp; web apps</h3>
                 <p>Native iOS and responsive web experiences that give creators, operators and advertisers a polished interface to their campaigns.</p>
             </div>
         </div>
+        <div style="margin-top: 40px; text-align: right;">
+            <a href="services.html" class="venture-link">All capabilities <span>→</span></a>
+        </div>
     </div>
 </section>
 
-<section id="ventures" class="section">
+<!-- ============================ VENTURES ============================ -->
+<section class="section section-alt" id="ventures">
     <div class="section-content">
         <div class="section-header">
             <div class="section-header-left">
                 <span class="eyebrow">Ventures</span>
-                <h2>Products we build and operate</h2>
+                <h2 class="section-title">Products we <span class="accent">build and operate.</span></h2>
             </div>
             <div class="section-header-right">
                 <p class="section-lead">Each product in our portfolio is built, operated and supported by the Eonic Labs team — with the engineers who shipped it still behind the wheel.</p>
@@ -126,58 +188,79 @@
         </div>
         <div class="ventures-grid">
             <article class="venture-card">
-                <h3>SpiderAds</h3>
+                <div class="venture-card-head">
+                    <h3>SpiderAds</h3>
+                    <span class="venture-status"><span class="dot"></span>Live</span>
+                </div>
                 <p class="venture-tagline">Make it smarter, so you can make it smarter.</p>
                 <p>SpiderAds is an advertising automation platform that handles the full lifecycle of a digital campaign — from creative design through scheduling to performance analysis — with minimal manual work.</p>
+                <div class="venture-stats">
+                    <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Auto-ads</span></div>
+                    <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Integrations</span></div>
+                    <div class="stat"><span class="stat-num">3x</span><span class="stat-label">Avg ROAS lift</span></div>
+                </div>
                 <ul class="venture-features">
-                    <li><strong>Create</strong> — Design customisable ads with adjustable colours, fonts and layouts. Content is pulled automatically from your website to speed up production.</li>
-                    <li><strong>Automate</strong> — AutoAds keeps campaigns running 24/7 or on demand, publishing and scheduling without manual intervention.</li>
+                    <li><strong>Create</strong> — Design customisable ads with adjustable colours, fonts and layouts. Content is pulled automatically from your website.</li>
+                    <li><strong>Automate</strong> — AutoAds keeps campaigns running 24/7 or on demand, publishing and scheduling without manual work.</li>
                     <li><strong>Analyse</strong> — Real-time and post-campaign reporting that shows what's working and where to invest next.</li>
                     <li><strong>Integrate</strong> — Integration+ and white-label options for agencies that want to embed SpiderAds into their own offering.</li>
                 </ul>
-                <a class="venture-link" href="https://spiderads.io" target="_blank" rel="noopener noreferrer">Visit spiderads.io &rarr;</a>
+                <a class="venture-link" href="https://spiderads.io" target="_blank" rel="noopener noreferrer">Visit spiderads.io <span>→</span></a>
             </article>
             <article class="venture-card">
-                <h3>Influeri</h3>
+                <div class="venture-card-head">
+                    <h3>Influeri</h3>
+                    <span class="venture-status"><span class="dot"></span>Live</span>
+                </div>
                 <p class="venture-tagline">Increase ROI with influencers and UGC by chatting with AI.</p>
                 <p>Influeri is an AI-powered platform that automates influencer and user-generated content campaigns end-to-end — connecting brands and creators, handling outreach, contracts and payments, and reporting on results.</p>
+                <div class="venture-stats">
+                    <div class="stat"><span class="stat-num">250M+</span><span class="stat-label">Creators</span></div>
+                    <div class="stat"><span class="stat-num">1,000+</span><span class="stat-label">Brands</span></div>
+                    <div class="stat"><span class="stat-num">AI</span><span class="stat-label">End-to-end</span></div>
+                </div>
                 <ul class="venture-features">
-                    <li><strong>AI matchmaking</strong> — Access to 250M+ social profiles, with AI suggesting the right creators for each brand, niche and audience.</li>
+                    <li><strong>AI matchmaking</strong> — 250M+ social profiles, with AI suggesting the right creators for each brand, niche and audience.</li>
                     <li><strong>Campaign creation</strong> — Set KPIs, guidelines and budgets in minutes, with AI assistance through every step.</li>
                     <li><strong>Automated operations</strong> — Outreach, negotiation, contracting, payments and compliance handled for you.</li>
                     <li><strong>Trusted by 1,000+ brands</strong> — Including Segway, Motorola, Alibaba and Wolt.</li>
                 </ul>
-                <a class="venture-link" href="https://influeri.com" target="_blank" rel="noopener noreferrer">Visit influeri.com &rarr;</a>
+                <a class="venture-link" href="https://influeri.com" target="_blank" rel="noopener noreferrer">Visit influeri.com <span>→</span></a>
             </article>
         </div>
     </div>
 </section>
 
-<section id="company" class="section section-alt">
+<!-- ============================ PRINCIPLES ============================ -->
+<section class="section section-dark" id="company">
     <div class="section-content">
         <div class="section-header">
             <div class="section-header-left">
-                <span class="eyebrow">Company</span>
-                <h2>How we work</h2>
+                <span class="eyebrow">Principles</span>
+                <h2 class="section-title" style="color:#fff;">How we <span class="accent">make decisions.</span></h2>
             </div>
             <div class="section-header-right">
-                <p class="section-lead">A few simple principles that shape how we make decisions, hire, and build.</p>
+                <p class="section-lead" style="color:rgba(255,255,255,0.72);">A handful of simple beliefs that shape what we build, who we hire, and what we say no to.</p>
             </div>
         </div>
         <div class="values-grid">
             <div class="value">
+                <span class="value-num">01 — Product</span>
                 <h3>Product over projects</h3>
                 <p>We invest long-term in a small number of products we believe in, rather than chasing short-term consulting engagements.</p>
             </div>
             <div class="value">
+                <span class="value-num">02 — Engineering</span>
                 <h3>Engineering-led</h3>
                 <p>Our team is built around senior full-stack engineers who have shipped large-scale production systems across adtech, fintech and SaaS.</p>
             </div>
             <div class="value">
+                <span class="value-num">03 — AI</span>
                 <h3>AI where it matters</h3>
                 <p>We use AI to remove friction from real workflows — not as a buzzword. Every model in production is measured, monitored and accountable.</p>
             </div>
             <div class="value">
+                <span class="value-num">04 — Sweden</span>
                 <h3>Built in Sweden</h3>
                 <p>Headquartered in Sweden, operating across Europe. We care about privacy, craft, and software that lasts.</p>
             </div>
@@ -185,32 +268,91 @@
     </div>
 </section>
 
-<section id="contact" class="section">
-    <div class="section-content contact-section">
-        <span class="eyebrow">Contact</span>
-        <h2>Let's build something together</h2>
-        <p>Whether you're an agency looking to embed our platforms, a brand curious about what AI-driven campaigns can do for you, or a talented engineer interested in joining the team — we'd love to hear from you.</p>
-        <p class="contact-email"><a href="mailto:hello@eoniclabs.com">hello@eoniclabs.com</a></p>
-        <div class="contact-meta">
-            <div>
-                <strong>Eonic Labs AB</strong><br>
-                Sweden
-            </div>
-            <div>
-                <strong>Products</strong><br>
-                <a href="https://spiderads.io" target="_blank" rel="noopener noreferrer">spiderads.io</a><br>
-                <a href="https://influeri.com" target="_blank" rel="noopener noreferrer">influeri.com</a>
-            </div>
+<!-- ============================ CTA ============================ -->
+<section class="cta-band">
+    <div class="section-content">
+        <span class="eyebrow" style="color: var(--brand-bright);">Let's talk</span>
+        <h2>Have a product to build, or a <span class="accent">platform to scale?</span></h2>
+        <p>Whether you're an agency looking to embed our platforms, a brand curious about AI-driven campaigns, or a talented engineer — we'd love to hear from you.</p>
+        <div class="hero-cta" style="margin-top: 0;">
+            <a href="contact.html" class="btn btn-primary">Start a conversation <span class="arrow">→</span></a>
+            <a href="mailto:hello@eoniclabs.com" class="btn btn-secondary">hello@eoniclabs.com</a>
         </div>
     </div>
 </section>
 
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2026 Eonic Labs AB. All rights reserved.</p>
-        <a href="privacy.html">Privacy Policy</a>
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <img src="images/logo.png" alt="Eonic Labs">
+            <p>A Swedish technology studio building AI-driven platforms for digital advertising and influencer marketing.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Studio</h4>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Ventures</h4>
+            <ul>
+                <li><a href="https://spiderads.io" target="_blank" rel="noopener noreferrer">SpiderAds</a></li>
+                <li><a href="https://influeri.com" target="_blank" rel="noopener noreferrer">Influeri</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="mailto:privacy@eoniclabs.com">Data Requests</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Eonic Labs AB · Sweden</span>
+        <span>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="mailto:hello@eoniclabs.com">hello@eoniclabs.com</a>
+        </span>
     </div>
 </footer>
 
+<!-- ============================ TWEAKS ============================ -->
+<div class="tweaks-panel" aria-hidden="true">
+    <div class="tweaks-head">
+        <h4>Hero background</h4>
+        <button class="tweaks-close" aria-label="Close">×</button>
+    </div>
+    <div class="tweaks-group">
+        <label>Animation variant</label>
+        <div class="tweak-buttons">
+            <button data-variant="network">Network</button>
+            <button data-variant="particles">Particles</button>
+            <button data-variant="dotgrid">Dot grid</button>
+            <button data-variant="aurora">Aurora</button>
+        </div>
+    </div>
+    <div class="tweaks-group">
+        <label>Logo placement</label>
+        <div class="tweak-buttons">
+            <button data-logo="off">Off</button>
+            <button data-logo="watermark">Watermark</button>
+            <button data-logo="brand-band">Brand band</button>
+            <button data-logo="glyph-big">Big glyph</button>
+        </div>
+    </div>
+    <div class="tweaks-group" style="margin-bottom: 0;">
+        <label style="font-size: 10px;">Tip: move your mouse across the hero</label>
+    </div>
+</div>
+
+<script src="app.js?v=4"></script>
 </body>
 </html>
